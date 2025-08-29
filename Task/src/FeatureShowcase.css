@@ -1,0 +1,151 @@
+.feature-showcase {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(8, 7, 7);
+}
+
+.feature-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+}
+
+.feature-left,
+.feature-center,
+.feature-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-left {
+  max-width: 300px;
+  position: sticky;
+  top: 100px;
+  align-items: flex-start;
+}
+
+.feature-content {
+  margin: 1rem 0;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.feature-body {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  margin: 0.5rem 0;
+  color: #007bff;
+}
+
+.arrow:focus {
+  outline: 2px solid #007bff;
+}
+
+.feature-center {
+  max-width: 300px;
+  position: sticky;
+  top: 100px;
+  justify-content: center;
+}
+
+.feature-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.feature-right {
+  max-width: 300px;
+  position: sticky;
+  top: 100px;
+  align-items: flex-start;
+}
+
+.feature-right h4 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.feature-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.feature-points li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  margin-bottom: 0.5rem;
+  user-select: none;
+}
+
+.feature-points li.active {
+  border-left: 3px solid #007bff;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.feature-points li:focus {
+  outline: 2px solid #007bff;
+}
+
+@media (max-width: 768px) {
+  .feature-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-left,
+  .feature-center,
+  .feature-right {
+    max-width: 100%;
+    position: static;
+    align-items: center;
+  }
+
+  .feature-left {
+    margin-bottom: 1rem;
+  }
+
+  .feature-right {
+    margin-top: 1rem;
+  }
+
+  .feature-points li {
+    text-align: center;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+  }
+
+  .feature-points li.active {
+    border-left: none;
+    border-bottom: 2px solid #007bff;
+  }
+}
